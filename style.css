@@ -1,0 +1,322 @@
+/*
+Theme Name: Theme Q
+Theme URI: http://example.com/
+Author: Your Name
+Author URI: http://example.com/
+Description: A WordPress theme utilizing PHP.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-q
+*/
+
+/* ライトモードの背景色を少し暗くする */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* 背景色を少し暗くする */
+    color: #333;
+}
+
+/* ヘッダーのスタイル */
+.site-header {
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.site-title a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.site-description {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #ccc;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navigation li {
+    margin: 0 1rem;
+}
+
+.main-navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-navigation a:hover {
+    background-color: #555;
+    color: #ddd;
+}
+
+/* フッターのスタイル */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.site-footer .site-info {
+    margin-bottom: 1rem;
+}
+
+.site-footer .site-info p {
+    margin: 0.5rem 0;
+}
+
+.site-footer .site-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer .site-info a:hover {
+    color: #ddd;
+}
+
+.footer-buttons {
+    margin-top: 1rem;
+}
+
+.footer-button {
+    display: inline-block !important;
+    margin: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
+    background-color: #0073aa !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.footer-button:hover {
+    background-color: #005177 !important;
+    color: #ddd !important;
+}
+
+/* フッターのタグとカテゴリーのスタイル */
+.footer-meta {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+.footer-meta .cat-links,
+.footer-meta .tag-links {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.footer-meta .cat-links::before,
+.footer-meta .tag-links::before {
+    content: '\f02b'; /* FontAwesomeアイコンのコード */
+    font-family: 'FontAwesome';
+    margin-right: 0.5rem;
+}
+
+/* 投稿ページのスタイル */
+.site-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.entry-header {
+    margin-bottom: 2rem;
+}
+
+.entry-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.entry-content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.entry-footer {
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.entry-footer .tag-links {
+    margin-right: 1rem;
+}
+
+.entry-footer .edit-link {
+    margin-left: 1rem;
+}
+
+.entry-footer .cat-links,
+.entry-footer .tag-links {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.entry-footer .cat-links::before,
+.entry-footer .tag-links::before {
+    content: '\f02b'; /* FontAwesomeアイコンのコード */
+    font-family: 'FontAwesome';
+    margin-right: 0.5rem;
+}
+
+.nav-subtitle {
+    display: block;
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.nav-title {
+    font-size: 1.25rem;
+    color: #0073aa;
+}
+
+.comments-area {
+    margin-top: 3rem;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment-list .comment {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.comment-list .comment-author {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-list .comment-meta {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.comment-list .comment-content {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* パンくずリストのスタイル */
+.breadcrumb {
+    margin: 1rem 0;
+    padding: 0.5rem 0; /* パディングを調整 */
+    background-color: transparent; /* 背景色を透明に */
+    border: none; /* ボーダーを削除 */
+    font-size: 0.875rem;
+}
+
+.breadcrumb a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #555;
+}
+
+/* 投稿のヘッダー画像のスタイル */
+.post-header-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-navigation {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main-navigation ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-navigation li {
+        margin: 0.5rem 0;
+    }
+
+    .main-navigation a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-navigation li {
+        margin: 0.5rem 0;
+    }
+
+    .entry-title {
+        font-size: 2rem;
+    }
+
+    .entry-content {
+        font-size: 1rem;
+    }
+
+    .footer-meta {
+        font-size: 0.75rem;
+    }
+
+    .footer-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

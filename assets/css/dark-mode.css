@@ -1,0 +1,38 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.site-header,
+.site-footer {
+    background-color: #1e1e1e;
+}
+
+.site-title a,
+.site-description,
+.main-navigation a,
+.footer-navigation a {
+    color: #ffffff;
+}
+
+.breadcrumb {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.breadcrumb a {
+    color: #bb86fc;
+}
+
+.breadcrumb a:hover {
+    color: #ffffff;
+}
+
+.entry-title,
+.entry-content,
+.entry-footer,
+.comment-list .comment-author,
+.comment-list .comment-meta,
+.comment-list .comment-content {
+    color: #ffffff;
+}
